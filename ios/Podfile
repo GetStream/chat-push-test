@@ -1,0 +1,11 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'PushNotifTest' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for PushNotifTest
+  pod 'StreamChatClient', :git => 'https://github.com/GetStream/stream-chat-swift', :branch => 'release/2.0'
+  pod 'SwiftJWT'
+end

@@ -1,0 +1,62 @@
+PODS:
+  - BlueCryptor (1.0.32)
+  - BlueECC (1.2.5)
+  - BlueRSA (1.0.34)
+  - GzipSwift (5.0.0)
+  - KituraContracts (1.2.1):
+    - LoggerAPI (~> 1.7)
+  - LoggerAPI (1.9.0):
+    - Logging (~> 1.1)
+  - Logging (1.2.0)
+  - Starscream (3.1.1)
+  - StreamChatClient (2.0.0):
+    - GzipSwift (~> 5.0.0)
+    - Starscream (~> 3.1.0)
+  - SwiftJWT (3.5.3):
+    - BlueCryptor (~> 1.0)
+    - BlueECC (~> 1.1)
+    - BlueRSA (~> 1.0)
+    - KituraContracts (~> 1.1)
+    - LoggerAPI (~> 1.7)
+
+DEPENDENCIES:
+  - StreamChatClient (from `https://github.com/GetStream/stream-chat-swift`, branch `release/2.0`)
+  - SwiftJWT
+
+SPEC REPOS:
+  trunk:
+    - BlueCryptor
+    - BlueECC
+    - BlueRSA
+    - GzipSwift
+    - KituraContracts
+    - LoggerAPI
+    - Logging
+    - Starscream
+    - SwiftJWT
+
+EXTERNAL SOURCES:
+  StreamChatClient:
+    :branch: release/2.0
+    :git: https://github.com/GetStream/stream-chat-swift
+
+CHECKOUT OPTIONS:
+  StreamChatClient:
+    :commit: 82cac4b9fcee367abe161027bef397cbf22e3969
+    :git: https://github.com/GetStream/stream-chat-swift
+
+SPEC CHECKSUMS:
+  BlueCryptor: b0aee3d9b8f367b49b30de11cda90e1735571c24
+  BlueECC: 0d18e93347d3ec6d41416de21c1ffa4d4cd3c2cc
+  BlueRSA: 6f9776d62d9773502415a7db3bcbb2bbb3f71fc3
+  GzipSwift: 5592f4d62b641e04d06443ba471f8ed76b1363e4
+  KituraContracts: e845e60dc8627ad0a76fa55ef20a45451d8f830b
+  LoggerAPI: fb78461eedac5316b290f2404d88b9d614d96c57
+  Logging: 7838d379d234d7e5ae1265fa02804a9084caf04c
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+  StreamChatClient: d3a7471bba91171bad3e08b80708b643865a2906
+  SwiftJWT: 9a47a71090cae25767078756b5810e3b630aa9a7
+
+PODFILE CHECKSUM: 65822b2bc1bf5009e86f94c57cc16047a1260a0c
+
+COCOAPODS: 1.8.4

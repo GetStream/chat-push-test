@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16085" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16078.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PushNotifTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMv-9n-vSY">
+                                <rect key="frame" x="20" y="141.5" width="81.5" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4V-yO-Ojh" customClass="CopyableLabel" customModule="PushNotifTest" customModuleProvider="target">
+                                <rect key="frame" x="20" y="170.5" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vi-Ms-Gr7">
+                                <rect key="frame" x="20" y="60" width="63.5" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elt-ld-OhK" customClass="CopyableLabel" customModule="PushNotifTest" customModuleProvider="target">
+                                <rect key="frame" x="20" y="89" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="stream-cli Command" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYV-ot-2NI">
+                                <rect key="frame" x="20" y="223" width="182" height="22"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xo0-0p-thz" customClass="CopyableLabel" customModule="PushNotifTest" customModuleProvider="target">
+                                <rect key="frame" x="20" y="253" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please send the app to background before running the command" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fy7-uc-FDW">
+                                <rect key="frame" x="20" y="305.5" width="374" height="41"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fy7-uc-FDW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1jA-2U-fhv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fy7-uc-FDW" secondAttribute="bottom" constant="16" id="6Jg-TX-9gZ"/>
+                            <constraint firstItem="Xo0-0p-thz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6vc-5I-TzS"/>
+                            <constraint firstItem="z4V-yO-Ojh" firstAttribute="top" secondItem="uMv-9n-vSY" secondAttribute="bottom" constant="8" id="8Js-mJ-zZU"/>
+                            <constraint firstItem="Elt-ld-OhK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MeK-5W-LnD"/>
+                            <constraint firstItem="wYV-ot-2NI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="N76-6v-wSB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Elt-ld-OhK" secondAttribute="trailing" constant="20" id="QzA-Nr-2VW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z4V-yO-Ojh" secondAttribute="trailing" constant="20" id="T2c-vB-Sjj"/>
+                            <constraint firstItem="0Vi-Ms-Gr7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WrT-j4-lA7"/>
+                            <constraint firstItem="Elt-ld-OhK" firstAttribute="top" secondItem="0Vi-Ms-Gr7" secondAttribute="bottom" constant="8" id="XW8-gz-nPu"/>
+                            <constraint firstItem="z4V-yO-Ojh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZKe-P8-ND5"/>
+                            <constraint firstItem="fy7-uc-FDW" firstAttribute="top" secondItem="Xo0-0p-thz" secondAttribute="bottom" constant="32" id="bQ1-lw-yFL"/>
+                            <constraint firstItem="0Vi-Ms-Gr7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="c04-3I-9AU"/>
+                            <constraint firstItem="uMv-9n-vSY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dNU-TS-3NK"/>
+                            <constraint firstAttribute="trailing" secondItem="fy7-uc-FDW" secondAttribute="trailing" constant="20" id="iXc-4M-V6h"/>
+                            <constraint firstItem="uMv-9n-vSY" firstAttribute="top" secondItem="Elt-ld-OhK" secondAttribute="bottom" constant="32" id="qNV-ez-YBP"/>
+                            <constraint firstItem="wYV-ot-2NI" firstAttribute="top" secondItem="z4V-yO-Ojh" secondAttribute="bottom" constant="32" id="tXD-ii-PA8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xo0-0p-thz" secondAttribute="trailing" constant="20" id="ugc-Sz-fXv"/>
+                            <constraint firstItem="Xo0-0p-thz" firstAttribute="top" secondItem="wYV-ot-2NI" secondAttribute="bottom" constant="8" id="xcY-iI-9qg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="commandLabel" destination="Xo0-0p-thz" id="86W-0Y-gIZ"/>
+                        <outlet property="deviceIdLabel" destination="z4V-yO-Ojh" id="R9C-mu-jjk"/>
+                        <outlet property="userIdLabel" destination="Elt-ld-OhK" id="yeA-Bp-8UJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
