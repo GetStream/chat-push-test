@@ -1,7 +1,8 @@
 # iOS Push Test Application
 
 ## Usage
-1. Clone the repo
+1. Clone the repo `git clone git@github.com:GetStream/chat-push-test.git`
+1. `cd ios`
 1. In folder `pod install`
 1. Input your api key and secret in `AppDelegate.swift:L25`
 1. Change the bundle identifier and development team/user so you can run the app in your device (**do not** run on simulator)
