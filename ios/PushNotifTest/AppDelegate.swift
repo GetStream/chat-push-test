@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let apiSecret = "<#API_SECRET#>"
         // ===============================================================
         
-        Client.config = .init(apiKey: apiKey)
+        Client.config = .init(apiKey: apiKey, baseURL: <#Your Server Location#>, stayConnectedInBackground: false)
         
         let possibleNames = ["Alexey", "Bahadir", "Tommaso", "Thierry", "Merel", "Marcelo", "Alessandro", "Ferhat", "Jaap", "Vishal"]
         let randomName = possibleNames.randomElement()!
@@ -35,16 +35,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         print("User ID: \(randomUserId)\nToken: \(token)")
         
-        Client.shared.set(user: .init(id: randomUserId, name: randomName), token: token)
-        Client.shared.onConnect = { connection in
+        var user = User(id: randomUserId)
+        user.name = randomName
+        Client.shared.set(user: user, token: token) { connection in
             if connection.isConnected {
                 DispatchQueue.main.async {
                     self.viewController?.askForNotificationPermissionIfNeeded()
                 }
-                Client.shared.onConnect = { _ in }
             }
         }
-        Client.shared.connect()
         
         return true
     }

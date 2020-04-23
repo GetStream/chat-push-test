@@ -6,6 +6,6 @@ target 'PushNotifTest' do
   use_frameworks!
 
   # Pods for PushNotifTest
-  pod 'StreamChatClient', :git => 'https://github.com/GetStream/stream-chat-swift', :branch => 'release/2.0'
+  pod 'StreamChatClient'
   pod 'SwiftJWT'
 end
