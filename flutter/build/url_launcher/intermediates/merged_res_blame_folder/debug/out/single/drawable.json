@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/salvatoregiordano/Development/chat-push-test/flutter/chat_push_test/build/url_launcher/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
+        "source": "/Users/salvatoregiordano/.gradle/caches/transforms-2/files-2.1/6e99a24d2413c794483183740b5328fe/core-1.1.0/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/Users/salvatoregiordano/Development/chat-push-test/flutter/chat_push_test/build/url_launcher/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
+        "source": "/Users/salvatoregiordano/.gradle/caches/transforms-2/files-2.1/6e99a24d2413c794483183740b5328fe/core-1.1.0/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/Users/salvatoregiordano/Development/chat-push-test/flutter/chat_push_test/build/url_launcher/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
+        "source": "/Users/salvatoregiordano/.gradle/caches/transforms-2/files-2.1/6e99a24d2413c794483183740b5328fe/core-1.1.0/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/Users/salvatoregiordano/Development/chat-push-test/flutter/chat_push_test/build/url_launcher/intermediates/res/merged/debug/drawable/notification_bg.xml",
+        "source": "/Users/salvatoregiordano/.gradle/caches/transforms-2/files-2.1/6e99a24d2413c794483183740b5328fe/core-1.1.0/res/drawable/notification_bg.xml"
+    }
+]

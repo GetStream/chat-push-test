@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/salvatoregiordano/Development/chat-push-test/flutter/chat_push_test/build/url_launcher/intermediates/incremental/mergeDebugResources/merged.dir/values-cs/values-cs.xml",
+            "map": [
+                {
+                    "source": "/Users/salvatoregiordano/.gradle/caches/transforms-2/files-2.1/6e99a24d2413c794483183740b5328fe/core-1.1.0/res/values-cs/values-cs.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/salvatoregiordano/Development/chat-push-test/flutter/chat_push_test/build/url_launcher/intermediates/res/merged/debug/values-cs/values-cs.xml",
+            "map": [
+                {
+                    "source": "/Users/salvatoregiordano/.gradle/caches/transforms-2/files-2.1/6e99a24d2413c794483183740b5328fe/core-1.1.0/res/values-cs/values-cs.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

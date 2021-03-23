@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/salvatoregiordano/Development/chat-push-test/flutter/chat_push_test/build/url_launcher/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
+        "source": "/Users/salvatoregiordano/.gradle/caches/transforms-2/files-2.1/6e99a24d2413c794483183740b5328fe/core-1.1.0/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/salvatoregiordano/Development/chat-push-test/flutter/chat_push_test/build/url_launcher/intermediates/res/merged/debug/layout/notification_action.xml",
+        "source": "/Users/salvatoregiordano/.gradle/caches/transforms-2/files-2.1/6e99a24d2413c794483183740b5328fe/core-1.1.0/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/Users/salvatoregiordano/Development/chat-push-test/flutter/chat_push_test/build/url_launcher/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
+        "source": "/Users/salvatoregiordano/.gradle/caches/transforms-2/files-2.1/6e99a24d2413c794483183740b5328fe/core-1.1.0/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/salvatoregiordano/Development/chat-push-test/flutter/chat_push_test/build/url_launcher/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/Users/salvatoregiordano/.gradle/caches/transforms-2/files-2.1/6e99a24d2413c794483183740b5328fe/core-1.1.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/salvatoregiordano/Development/chat-push-test/flutter/chat_push_test/build/url_launcher/intermediates/res/merged/debug/layout/custom_dialog.xml",
+        "source": "/Users/salvatoregiordano/.gradle/caches/transforms-2/files-2.1/6e99a24d2413c794483183740b5328fe/core-1.1.0/res/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "/Users/salvatoregiordano/Development/chat-push-test/flutter/chat_push_test/build/url_launcher/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/salvatoregiordano/.gradle/caches/transforms-2/files-2.1/6e99a24d2413c794483183740b5328fe/core-1.1.0/res/layout/notification_template_part_chronometer.xml"
+    }
+]

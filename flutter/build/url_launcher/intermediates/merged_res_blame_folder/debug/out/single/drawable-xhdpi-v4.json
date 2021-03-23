@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/salvatoregiordano/Development/chat-push-test/flutter/chat_push_test/build/url_launcher/intermediates/res/merged/debug/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png",
+        "source": "/Users/salvatoregiordano/.gradle/caches/transforms-2/files-2.1/6e99a24d2413c794483183740b5328fe/core-1.1.0/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/Users/salvatoregiordano/Development/chat-push-test/flutter/chat_push_test/build/url_launcher/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_normal.9.png",
+        "source": "/Users/salvatoregiordano/.gradle/caches/transforms-2/files-2.1/6e99a24d2413c794483183740b5328fe/core-1.1.0/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/Users/salvatoregiordano/Development/chat-push-test/flutter/chat_push_test/build/url_launcher/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png",
+        "source": "/Users/salvatoregiordano/.gradle/caches/transforms-2/files-2.1/6e99a24d2413c794483183740b5328fe/core-1.1.0/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/Users/salvatoregiordano/Development/chat-push-test/flutter/chat_push_test/build/url_launcher/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_low_normal.9.png",
+        "source": "/Users/salvatoregiordano/.gradle/caches/transforms-2/files-2.1/6e99a24d2413c794483183740b5328fe/core-1.1.0/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/Users/salvatoregiordano/Development/chat-push-test/flutter/chat_push_test/build/url_launcher/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_low_pressed.9.png",
+        "source": "/Users/salvatoregiordano/.gradle/caches/transforms-2/files-2.1/6e99a24d2413c794483183740b5328fe/core-1.1.0/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
+    }
+]
