@@ -1,21 +1,74 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:stream_chat_flutter/stream_chat_flutter.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 
+/// Set these values with your own ones
+const apiKey = 'kv7mcsxr24p8';
+const userToken =
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoidG9tbWFzbyJ9.GLSI0ESshERMo2WjUpysD709NEtn1zmGimUN2an7g9o';
+const userId = 'tommaso';
+
+Future<void> onBackgroundMessage(RemoteMessage message) async {
+  final chatClient = StreamChatClient(apiKey);
+  chatClient.connectUser(
+    User(id: userId),
+    userToken,
+    connectWebSocket: false,
+  );
+
+  handleNotification(message, chatClient);
+}
+
+void handleNotification(
+  RemoteMessage message,
+  StreamChatClient chatClient,
+) async {
+  final data = message.data;
+  if (data['type'] == 'message.new') {
+    final flutterLocalNotificationsPlugin = await setupLocalNotifications();
+    final messageId = data['id'];
+    final response = await chatClient.getMessage(messageId);
+    flutterLocalNotificationsPlugin.show(
+      1,
+      'New message from ${response.message.user.name} in ${response.channel.name}',
+      response.message.text,
+      NotificationDetails(
+          android: AndroidNotificationDetails(
+        'new_message',
+        'New message notifications channel',
+      )),
+    );
+  }
+}
+
+Future<FlutterLocalNotificationsPlugin> setupLocalNotifications() async {
+  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+      FlutterLocalNotificationsPlugin();
+  const AndroidInitializationSettings initializationSettingsAndroid =
+      AndroidInitializationSettings('launch_background');
+  final IOSInitializationSettings initializationSettingsIOS =
+      IOSInitializationSettings();
+  final InitializationSettings initializationSettings = InitializationSettings(
+    android: initializationSettingsAndroid,
+    iOS: initializationSettingsIOS,
+  );
+
+  await flutterLocalNotificationsPlugin.initialize(initializationSettings);
+
+  return flutterLocalNotificationsPlugin;
+}
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
-  /// Set these values with your own ones
-  const apiKey = '<API-KEY>';
-  const userToken = '<USER-TOKEN>';
-  const userId = '<USER-ID>';
 
   /// Create a new instance of [StreamChatClient] passing the apikey obtained from your
   /// project dashboard.
   final client = StreamChatClient(
     apiKey,
-    logLevel: Level.SEVERE,
+    logLevel: Level.INFO,
   );
 
   /// Set the current user and connect the websocket. In a production scenario, this should be done using
@@ -27,6 +80,7 @@ void main() async {
     userToken,
   );
 
+  await Firebase.initializeApp();
   runApp(MyApp(client));
 }
 
@@ -79,7 +133,7 @@ class _HomePageState extends State<HomePage> {
         children: [
           ListTile(
             title: Text('User ID'),
-            subtitle: Text(StreamChat.of(context).user.id),
+            subtitle: Text(StreamChat.of(context).currentUser.id),
           ),
           ListTile(
             title: Text('Device ID'),
@@ -114,19 +168,30 @@ class _HomePageState extends State<HomePage> {
   }
 
   void setupNotifications() async {
-    final firebaseMessaging = FirebaseMessaging();
-    final res = await firebaseMessaging.requestNotificationPermissions();
-    if (res == false) {
+    final firebaseMessaging = FirebaseMessaging.instance;
+    final res = await firebaseMessaging.requestPermission();
+    if (res.authorizationStatus != AuthorizationStatus.authorized) {
       throw ArgumentError(
           'You must allow notification permissions in order to receive push notifications');
     }
 
-    firebaseMessaging.configure();
-    firebaseMessaging.onTokenRefresh.listen((token) {
-      StreamChat.of(context).client.addDevice(token, PushProvider.firebase);
-      setState(() {
-        this.token = token;
-      });
+    firebaseMessaging.getToken().then(updateToken);
+    firebaseMessaging.onTokenRefresh.listen(updateToken);
+    FirebaseMessaging.onMessage.listen((message) async {
+      print('message.data: ${message.data}');
+      handleNotification(
+        message,
+        StreamChat.of(context).client,
+      );
+    });
+
+    FirebaseMessaging.onBackgroundMessage(onBackgroundMessage);
+  }
+
+  void updateToken(String token) {
+    StreamChat.of(context).client.addDevice(token, PushProvider.firebase);
+    setState(() {
+      this.token = token;
     });
   }
 }
