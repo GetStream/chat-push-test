@@ -1,5 +1,7 @@
 # Stream Chat Push Test
 
+**This project is no longer under active development. If you are looking for a way to test your push notifications setup, take a look at [Testing Push Notifications](https://getstream.io/chat/docs/flutter-dart/push_test/?language=dart) docs.**
+
 This repo collects test applications to setup and test push on mobile and Stream Chat.
 
 ## Setup 
