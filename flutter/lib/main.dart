@@ -175,7 +175,7 @@ class _HomePageState extends State<HomePage> {
           'You must allow notification permissions in order to receive push notifications');
     }
 
-    firebaseMessaging.getToken().then(updateToken);
+    firebaseMessaging.getToken().then(updateToken);//The argument type 'void Function(String)' can't be assigned to the parameter type 'FutureOr<dynamic> Function(String?)'.
     firebaseMessaging.onTokenRefresh.listen(updateToken);
     FirebaseMessaging.onMessage.listen((message) async {
       print('message.data: ${message.data}');
